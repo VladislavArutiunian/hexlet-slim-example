@@ -1,0 +1,9 @@
+<form action="/users" method="get">
+    <input type="search" required name="user">
+    <input type="submit" value="Search">
+</form>
+<ul>
+    <?php foreach ($users as $user): ?>
+    <li><?= htmlspecialchars($user) ?></li>
+    <?php endforeach ?>
+</ul>

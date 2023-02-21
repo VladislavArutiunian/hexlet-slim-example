@@ -1,0 +1,19 @@
+<h2>New user</h2>
+<hr>
+<form action="/users/new" method="post">
+    <div>
+    <label>
+        Nickname: 
+        <input type="text" required name="user[nickname]" value="<?= $user['nickname'] ?>">
+    </label>
+    </div>
+    <div>
+    <label>
+        Email: 
+        <input type="email" required name="user[email]" value="<?= $user['email'] ?>">
+    </label>
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>
